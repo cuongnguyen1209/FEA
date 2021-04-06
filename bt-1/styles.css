@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    color: white;
+    background-image: url(./img/banner-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    padding: 3% 0;
+    margin-bottom: 0.5%;
+}
+.header h2 {
+    margin: 0;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.header p {
+    font-size: 20px;
+}
+
+.nav_container {
+    padding: 0 10% 0 5%;
+    margin-bottom: 2%;
+}
+.nav {
+    display: flex;
+    background-image: linear-gradient(to right, #42a9c8d6, #1e7cff);
+    padding: 1% 1%;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    opacity: 0.8;
+}
+.nav__menu {
+    width: 90%;
+    display: flex;
+    gap: 3%;
+}
+.nav__contact {
+    width: 10%;
+    text-align: right;
+}
+.nav a:hover {
+    opacity: 1;
+}
+
+
+
+
+.body__content {
+    padding: 0 0 5% 5%;
+}
+
+.body__content {
+    display: flex;
+}
+.sidebar {
+    width: 25%;
+    margin-right: 3%;
+}
+.card {
+    box-shadow: 1px 1px 15px 0px #888888;
+    margin-bottom: 10%;
+}
+.sidebar h3 {
+    text-transform: capitalize;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 8%;
+}
+.card__img img {
+    width: 100%;
+    height: auto;
+}
+.card__content {
+    font-size: 18px;
+    padding: 0 3%;
+}
+.card__content table {
+    width: 100%;
+}
+.card__content th {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+
+    padding:5px 5px 5px 0;
+}
+.card__content td {
+    text-transform: capitalize;
+    padding: 5px 0 5px 3px;
+}
+.card__content td a {
+    text-decoration: none;
+    color: blue;
+    text-transform: lowercase;
+}
+.card__content h4 {
+    margin: 0;
+    padding: 5% 0;
+    font-size: 20px;
+}
+.checked {
+    color: #ffa500;
+}
+.card__text p {
+    margin: 0;
+    padding: 5% 0;
+}
+
+
+
+.section {
+    width: 65%;
+    padding-right: 2%;
+}
+.section h3 {
+    text-transform: capitalize;
+    font-size: 24px;
+    margin: 0;
+    padding: 3% 0;
+}
+.intro p {
+    font-size: 18px;
+    margin: 0;
+    padding: 1%;
+}
+.intro p:nth-of-type(1) {
+    font-weight: 600;
+}
+
+
+.skill__item {
+    display: flex;
+    align-items: center;
+
+    padding: 2% 0;
+}
+.skill__type {
+    width: 20%;
+}
+.skill__type p {
+    margin: 0;
+}
+.skill__bar {
+    width: 80%;
+    border-radius: 25px;
+    background-color: #bababa;
+    height: 30px;
+}
+.skill__percent {
+    height: 100%;
+    border-radius: 25px;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.html {
+    width: 90%;
+    background-color: #ff00e0;
+}
+.css {
+    width: 70%;
+    background-color: #6e00ff;
+}
+.js {
+    width: 50%;
+    background-color: blue;
+}
+.golang {
+    width: 85%;
+    background-color: green;
+}
+
+.quote__text {
+    background-color: #d9d9d9;
+    border-left: 5px solid #808080;
+    padding: 1% 1% 1% 3%;
+}
+.quote__text p {
+    line-height: 2;
+    font-size: 18px;
+    margin: 0;
+}
+
+.myweb__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 8%;
+}
+.myweb__item {
+    text-align: center;
+    padding: 10%;
+}
+.item__icon .fa {
+    padding: 30px;
+    border-radius: 50%;
+    background: #5f5fff;
+    color: white;
+    font-size: 30px;
+}
+.item__content h4 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.item__content p {
+    font-size: 20px;
+    text-align: justify;
+}
+.body__right {
+    width: 10%;
+    background-image: url(../bt/img/course-phone.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+
+.footer {
+    background-color: #1e7cff;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer h5 {
+    font-size: 24px;
+    color: white;
+}
