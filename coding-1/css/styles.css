@@ -17,7 +17,7 @@
  .collapsible:after {
     content: '\276F';
     transform: rotate(-90deg);
-    transition: all 0.5s linear;
+    transition: all 3s linear;
     color: white;
     font-weight: bold;
     float: right;
