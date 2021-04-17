@@ -1,0 +1,485 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* menu-hover */
+.menu--hover {
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 5%;
+
+    position: relative;
+}
+.menu--hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s linear;
+}
+.menu__content {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+
+    transition: 1s linear;
+}
+
+.menu__content a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 24px;
+    color: white;
+
+    transition: 0.2s linear;
+
+}
+.menu__content a:hover {
+    color: palevioletred;
+}
+.menu--hover:hover .menu__content {
+    left: 0;
+}
+.menu--hover:hover img {
+    left: 20%;
+}
+
+
+/* donut-spin */
+.donut-spin {
+    text-align: center;
+
+    margin-bottom: 5%;
+}
+.donut__btn {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f1f1f1;
+    background-color: white;
+    border-radius: 50%;
+    border-left-color: blue;
+    animation: spin 3s linear infinite alternate;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* name-hover */
+.name-hover {
+    position: relative;
+
+    width: 60%;
+    height: 500px;
+    margin: 0 auto 5% auto;
+}
+.name-hover img {
+    width: 100%;
+}
+.name {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+
+    transition: .5s ease-in-out;
+}
+.name h2 {
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    transition: 0.5s linear;
+}
+.name-hover:hover .name {
+    z-index: 1;
+    background-color: black;
+    opacity: 0.6;
+}
+
+
+
+/* wave */
+.wave {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.wave button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: blue;
+    transition: 1s linear;
+}
+.btn-1 {
+    
+    animation: btn-1 .5s linear alternate infinite;
+}
+.btn-2 {
+    
+    animation: btn-1 .5s linear alternate infinite;
+    animation-delay: 100ms;
+}
+.btn-3 {
+    
+    animation: btn-1 .5s linear alternate infinite;
+    animation-delay: 200ms;
+}
+
+
+@keyframes btn-1 {
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-3px);
+        opacity: 0.8;
+    }
+    40%{
+        transform: translateY(-6px);
+        opacity: 0.6;
+    }
+    60%{
+        transform: translateY(-9px);
+        opacity: 0.4;
+    }
+    80%{
+        transform: translateY(-12px);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+}
+
+
+
+/* height-transition */
+.hover-me {
+    text-align: center;
+    margin-bottom: 10%;
+}
+.hover-me a {
+    cursor: pointer;
+}
+
+.img img {
+    width: 60%;
+    max-height: 0;
+    transition: .5s ease-out;
+}
+.hover-me a:hover + .img img {
+    max-height: 500px;
+}
+
+
+
+
+/* rotate-img*/
+.hover-img {
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+.hover-img img {
+    width: 100%;
+    height: 100%;
+    transition: 1s linear;
+}
+.hover-img:hover img {
+    transform: scale(1.3) rotate(10deg);
+}
+
+
+
+/* text-hover */
+.text-hover {
+    margin-bottom: 10%;
+    text-align: center;
+}
+.text-hover a {
+    font-size: 32px;
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    display:inline-block;
+
+    position: relative;
+
+    /* transition: all 2s linear; */
+}
+.text-hover a::after {
+    content: "";
+    border-bottom: 2px solid blue;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    /* width: 100%; */
+    width:0;
+
+    transition: all 1s linear;
+}
+.text-hover a:hover:after{
+    width: 100%;
+}
+
+
+
+
+/* submit */
+.submit {
+    text-align: center;
+    margin-bottom: 10%;
+}
+.submit button {
+    text-transform: capitalize;
+    font-size: 24px;
+    padding: 25px;
+    background-color: unset;
+    transition: all .5s linear;
+}
+.submit button:hover {
+    color: white;
+    background: black;
+}
+
+
+
+/* submit */
+.submit-1 {
+    text-align: center;
+    margin-bottom: 10%;
+}
+.submit-1 button {
+    text-transform: capitalize;
+    font-size: 24px;
+    padding: 10px 50px;
+    background-color: black;
+    color: white;
+
+    position: relative;
+}
+.submit-1 button::after {
+    content: "";
+    border-top: 3px solid black;
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 20%;
+    transition: all .5s linear;
+}
+.submit-1 button::before {
+    content: "";
+    border-bottom: 3px solid black;
+    position: absolute;
+    bottom: -20%;
+    right: 0;
+    width: 20%;
+    transition: all .5s linear;
+}
+.submit-1 button:hover:after, .submit-1 button:hover::before {
+    width: 100%;
+}
+
+
+
+/* square */
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 0 auto;
+    animation: square 1s linear alternate infinite;
+
+    margin-bottom: 10%;
+}
+
+@keyframes square {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+
+
+
+/* circle */
+.circle {
+    text-align: center;
+    margin-bottom: 20%;
+    position: relative;
+}
+.circle-1, .circle-2 {
+    width: 50px;
+    height: 50px;
+    border: 4px solid blue;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    animation: circle 1s linear infinite backwards;
+
+}
+.circle-2 {
+    animation-delay: .5s;
+}
+
+@keyframes circle {
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(0.75);
+        opacity: 0.4;
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+
+/* hover-turn */
+.hover-turn-containe {
+    margin-bottom: 20%;
+}
+.hover-turn {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin: 0 auto;
+}
+.hover-turn .front, .hover-turn .back {
+    width: 250px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+    transition: all 1s linear;
+
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.hover-turn .front {
+    background-image: linear-gradient(to bottom left, #3b00ca, #00efff);
+}
+.hover-turn .back {
+    background-image: linear-gradient(to top right, #001bb0, #e91e63);
+    z-index: -1;
+    transform: rotateY(180deg);
+}
+.hover-turn p {
+    margin: 0;
+    padding: 20px 0 0 20px;
+    font-size: 24px;
+    color: white;
+}
+.hover-turn:hover .front {
+    transform: rotateY(180deg);
+}
+.hover-turn:hover .back {
+    transform: rotateY(0);
+}
+
+
+
+
+/* menu-1 */
+.menu-1 {
+    padding-left: 30%;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.menu-1 h4 {
+    text-transform: capitalize;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 12px;
+    cursor: pointer;
+}
+.menu-1 .child {
+    padding-left: 12px;
+}
+.menu-1 a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 24px;
+    color: black;
+    line-height: 40px;
+}
+.menu-1 .child div {
+    width: 120px;
+    transform:translateX(100vw);
+    transition: translate .5s linear;
+}
+.menu-1 h4:hover + .child>div {
+    animation: menu-translate .5s linear forwards;
+}
+.active {
+    transform: translateX(100vw)
+}
+.menu-1 h4:hover + .child>div:nth-of-type(2) {
+    animation-delay: .05s;
+}
+.menu-1 h4:hover + .child>div:nth-of-type(3) {
+    animation-delay: .1s;
+}
+.menu-1 h4:hover + .child>div:nth-of-type(4) {
+    animation-delay: .15s;
+}
+.menu-1 h4:hover + .child>div:nth-of-type(5) {
+    animation-delay: .2s;
+}
+
+@keyframes menu-translate {
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
