@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding-2.1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+
+    <button class="btn open-btn" id="open_btn" onclick="open_btn()">open</button>
+    <div class="content" id="content">
+        <button class="btn close-btn" onclick="close_btn()">close</button>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">detail</a></li>
+            <li><a href="">service</a></li>
+            <li><a href="">about</a></li>
+
+        </ul>
+    </div>
+
+    <script>
+
+        const a = document.getElementById("content");
+        const b = document.getElementById("open_btn");
+
+        function open_btn() {
+            a.style.maxHeight = "100vh"
+            b.style.display = "none"
+        }
+
+        function close_btn() {
+            a.style.maxHeight = "0"
+            b.style.display = "block"
+        }
+
+
+    </script>
+
+
+</body>
+
+
+</html>
